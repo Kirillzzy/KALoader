@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8A1297E41F63130200BB1BEC /* KALoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1297E21F63130200BB1BEC /* KALoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A90B8671F6315040036E609 /* KALoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8661F6315040036E609 /* KALoader.swift */; };
+		8A90B8691F63176F0036E609 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8681F63176F0036E609 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A1297DF1F63130200BB1BEC /* KALoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KALoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1297E21F63130200BB1BEC /* KALoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoader.h; sourceTree = "<group>"; };
 		8A1297E31F63130200BB1BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A90B8661F6315040036E609 /* KALoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KALoader.swift; sourceTree = "<group>"; };
+		8A90B8681F63176F0036E609 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				8A1297E21F63130200BB1BEC /* KALoader.h */,
+				8A90B8661F6315040036E609 /* KALoader.swift */,
+				8A90B8681F63176F0036E609 /* UIView+Extensions.swift */,
 				8A1297E31F63130200BB1BEC /* Info.plist */,
 			);
 			path = KALoader;
@@ -96,6 +102,7 @@
 					8A1297DE1F63130200BB1BEC = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KH2KDZEEE3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A90B8691F63176F0036E609 /* UIView+Extensions.swift in Sources */,
+				8A90B8671F6315040036E609 /* KALoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 		8A1297E81F63130200BB1BEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KH2KDZEEE3;
@@ -255,6 +265,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kirillzzy.KALoader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -262,6 +273,7 @@
 		8A1297E91F63130200BB1BEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KH2KDZEEE3;
@@ -298,6 +310,7 @@
 				8A1297E91F63130200BB1BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
