@@ -19,6 +19,7 @@ internal class KALoaderView: UIView {
     gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
     gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
     gradientLayer.frame = frame
+    layer.insertSublayer(gradientLayer, at: 0)
   }
   
   required init?(coder aDecoder: NSCoder) {
