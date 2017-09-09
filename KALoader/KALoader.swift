@@ -30,12 +30,16 @@ internal class KALoaderView: UIView {
     gradientLayer.frame = frame
   }
 
-  func animateLayer() {
+  func startAnimateLayer() {
     let gradientAnimation = CABasicAnimation(keyPath: "locations")
     gradientAnimation.fromValue = [0.0, 0.0, 0.25]
     gradientAnimation.toValue = [0.75, 1.0, 1.0]
     gradientAnimation.duration = 0.7
     gradientAnimation.repeatCount = .infinity
     gradientLayer.add(gradientAnimation, forKey: nil)
+  }
+
+  func stopAnimateLayer() {
+    gradientLayer.removeAllAnimations()
   }
 }

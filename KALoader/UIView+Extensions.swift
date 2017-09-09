@@ -26,18 +26,23 @@ internal extension UIView {
 // MARK: - Defaults methods
 public extension UIView {
   func showLoader() {
-    if viewKALoader == nil {
-      viewKALoader = KALoaderView(frame: self.frame)
-    }
+    if viewKALoader != nil { return }
+    viewKALoader = KALoaderView(frame: self.frame)
     guard let viewKALoader = viewKALoader else { return }
 
     viewKALoader.setFrameForGradientLayer(frame: self.frame)
     insertSubview(viewKALoader, at: 0)
-    viewKALoader.animateLayer()
+    viewKALoader.startAnimateLayer()
   }
 
   func hideLoader() {
     guard let viewKALoader = viewKALoader else { return }
+    viewKALoader.stopAnimateLayer()
+    viewKALoader.removeFromSuperview()
+    self.viewKALoader = nil
+  }
 
+  func isLoaderShowing() -> Bool {
+    return viewKALoader != nil
   }
 }
