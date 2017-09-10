@@ -9,7 +9,7 @@
 import Foundation
 import ObjectiveC
 
-private var associationKey = "view_kaloader"
+private var associationKey = "view_kaloader_key"
 
 // MARK: - ViewKALoader
 internal extension UIView {
@@ -27,18 +27,16 @@ internal extension UIView {
 public extension UIView {
   func showLoader() {
     if viewKALoader != nil { return }
-    viewKALoader = KALoaderView(frame: self.frame)
+    viewKALoader = KALoaderView(frame: self.bounds)
     guard let viewKALoader = viewKALoader else { return }
 
-    viewKALoader.setFrameForGradientLayer(frame: self.frame)
     insertSubview(viewKALoader, at: 0)
     viewKALoader.startAnimateLayer()
   }
 
   func hideLoader() {
-    guard let viewKALoader = viewKALoader else { return }
-    viewKALoader.stopAnimateLayer()
-    viewKALoader.removeFromSuperview()
+    viewKALoader?.stopAnimateLayer()
+    viewKALoader?.removeFromSuperview()
     self.viewKALoader = nil
   }
 

@@ -21,6 +21,7 @@ internal class KALoaderView: UIView {
 
   override init(frame: CGRect) {
     super.init(frame: frame)
+
     gradientLayer = CAGradientLayer()
     gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
     gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
