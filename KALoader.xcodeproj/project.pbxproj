@@ -7,12 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0483041F65D36C005F4110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0483031F65D36C005F4110 /* AppDelegate.swift */; };
+		8A0483061F65D36C005F4110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0483051F65D36C005F4110 /* ViewController.swift */; };
+		8A0483091F65D36C005F4110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0483071F65D36C005F4110 /* Main.storyboard */; };
+		8A04830B1F65D36C005F4110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A04830A1F65D36C005F4110 /* Assets.xcassets */; };
+		8A04830E1F65D36C005F4110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A04830C1F65D36C005F4110 /* LaunchScreen.storyboard */; };
+		8A0483131F65D57E005F4110 /* KALoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; };
+		8A0483141F65D57E005F4110 /* KALoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A1297E41F63130200BB1BEC /* KALoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1297E21F63130200BB1BEC /* KALoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A90B8671F6315040036E609 /* KALoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8661F6315040036E609 /* KALoader.swift */; };
 		8A90B8691F63176F0036E609 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8681F63176F0036E609 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A0483151F65D57E005F4110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A1297D61F63130200BB1BEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1297DE1F63130200BB1BEC;
+			remoteInfo = KALoader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A0483171F65D57E005F4110 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A0483141F65D57E005F4110 /* KALoader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8A0483011F65D36C005F4110 /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0483031F65D36C005F4110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0483051F65D36C005F4110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A0483081F65D36C005F4110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A04830A1F65D36C005F4110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A04830D1F65D36C005F4110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A04830F1F65D36C005F4110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1297DF1F63130200BB1BEC /* KALoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KALoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1297E21F63130200BB1BEC /* KALoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALoader.h; sourceTree = "<group>"; };
 		8A1297E31F63130200BB1BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +59,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8A0482FE1F65D36C005F4110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0483131F65D57E005F4110 /* KALoader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A1297DB1F63130200BB1BEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0483021F65D36C005F4110 /* iOS-Example */ = {
+			isa = PBXGroup;
+			children = (
+				8A0483031F65D36C005F4110 /* AppDelegate.swift */,
+				8A0483051F65D36C005F4110 /* ViewController.swift */,
+				8A0483071F65D36C005F4110 /* Main.storyboard */,
+				8A04830A1F65D36C005F4110 /* Assets.xcassets */,
+				8A04830C1F65D36C005F4110 /* LaunchScreen.storyboard */,
+				8A04830F1F65D36C005F4110 /* Info.plist */,
+			);
+			path = "iOS-Example";
+			sourceTree = "<group>";
+		};
 		8A1297D51F63130200BB1BEC = {
 			isa = PBXGroup;
 			children = (
 				8A1297E11F63130200BB1BEC /* KALoader */,
+				8A0483021F65D36C005F4110 /* iOS-Example */,
 				8A1297E01F63130200BB1BEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1297DF1F63130200BB1BEC /* KALoader.framework */,
+				8A0483011F65D36C005F4110 /* iOS-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +133,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8A0483001F65D36C005F4110 /* iOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0483121F65D36C005F4110 /* Build configuration list for PBXNativeTarget "iOS-Example" */;
+			buildPhases = (
+				8A0482FD1F65D36C005F4110 /* Sources */,
+				8A0482FE1F65D36C005F4110 /* Frameworks */,
+				8A0482FF1F65D36C005F4110 /* Resources */,
+				8A0483171F65D57E005F4110 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0483161F65D57E005F4110 /* PBXTargetDependency */,
+			);
+			name = "iOS-Example";
+			productName = "iOS-Example";
+			productReference = 8A0483011F65D36C005F4110 /* iOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8A1297DE1F63130200BB1BEC /* KALoader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A1297E71F63130200BB1BEC /* Build configuration list for PBXNativeTarget "KALoader" */;
@@ -96,9 +176,15 @@
 		8A1297D61F63130200BB1BEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Kirill Averyanov";
 				TargetAttributes = {
+					8A0483001F65D36C005F4110 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KH2KDZEEE3;
+						ProvisioningStyle = Automatic;
+					};
 					8A1297DE1F63130200BB1BEC = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KH2KDZEEE3;
@@ -113,6 +199,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8A1297D51F63130200BB1BEC;
 			productRefGroup = 8A1297E01F63130200BB1BEC /* Products */;
@@ -120,11 +207,22 @@
 			projectRoot = "";
 			targets = (
 				8A1297DE1F63130200BB1BEC /* KALoader */,
+				8A0483001F65D36C005F4110 /* iOS-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8A0482FF1F65D36C005F4110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A04830E1F65D36C005F4110 /* LaunchScreen.storyboard in Resources */,
+				8A04830B1F65D36C005F4110 /* Assets.xcassets in Resources */,
+				8A0483091F65D36C005F4110 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A1297DD1F63130200BB1BEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +233,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8A0482FD1F65D36C005F4110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0483061F65D36C005F4110 /* ViewController.swift in Sources */,
+				8A0483041F65D36C005F4110 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A1297DA1F63130200BB1BEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,7 +253,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8A0483161F65D57E005F4110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1297DE1F63130200BB1BEC /* KALoader */;
+			targetProxy = 8A0483151F65D57E005F4110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A0483071F65D36C005F4110 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0483081F65D36C005F4110 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A04830C1F65D36C005F4110 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A04830D1F65D36C005F4110 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		8A0483101F65D36C005F4110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KH2KDZEEE3;
+				INFOPLIST_FILE = "iOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kirillzzy.iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A0483111F65D36C005F4110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KH2KDZEEE3;
+				INFOPLIST_FILE = "iOS-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kirillzzy.iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		8A1297E51F63130200BB1BEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -294,6 +458,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8A0483121F65D36C005F4110 /* Build configuration list for PBXNativeTarget "iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0483101F65D36C005F4110 /* Debug */,
+				8A0483111F65D36C005F4110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8A1297D91F63130200BB1BEC /* Build configuration list for PBXProject "KALoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
