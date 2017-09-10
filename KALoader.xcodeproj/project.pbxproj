@@ -12,15 +12,15 @@
 		8A0483091F65D36C005F4110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0483071F65D36C005F4110 /* Main.storyboard */; };
 		8A04830B1F65D36C005F4110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A04830A1F65D36C005F4110 /* Assets.xcassets */; };
 		8A04830E1F65D36C005F4110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A04830C1F65D36C005F4110 /* LaunchScreen.storyboard */; };
-		8A0483131F65D57E005F4110 /* KALoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; };
-		8A0483141F65D57E005F4110 /* KALoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A0483181F65E159005F4110 /* KALoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; };
+		8A0483191F65E159005F4110 /* KALoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1297DF1F63130200BB1BEC /* KALoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A1297E41F63130200BB1BEC /* KALoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1297E21F63130200BB1BEC /* KALoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A90B8671F6315040036E609 /* KALoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8661F6315040036E609 /* KALoader.swift */; };
 		8A90B8691F63176F0036E609 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A90B8681F63176F0036E609 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A0483151F65D57E005F4110 /* PBXContainerItemProxy */ = {
+		8A04831A1F65E159005F4110 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A1297D61F63130200BB1BEC /* Project object */;
 			proxyType = 1;
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8A0483171F65D57E005F4110 /* Embed Frameworks */ = {
+		8A04831C1F65E159005F4110 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8A0483141F65D57E005F4110 /* KALoader.framework in Embed Frameworks */,
+				8A0483191F65E159005F4110 /* KALoader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A0483131F65D57E005F4110 /* KALoader.framework in Frameworks */,
+				8A0483181F65E159005F4110 /* KALoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,12 +140,12 @@
 				8A0482FD1F65D36C005F4110 /* Sources */,
 				8A0482FE1F65D36C005F4110 /* Frameworks */,
 				8A0482FF1F65D36C005F4110 /* Resources */,
-				8A0483171F65D57E005F4110 /* Embed Frameworks */,
+				8A04831C1F65E159005F4110 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A0483161F65D57E005F4110 /* PBXTargetDependency */,
+				8A04831B1F65E159005F4110 /* PBXTargetDependency */,
 			);
 			name = "iOS-Example";
 			productName = "iOS-Example";
@@ -254,10 +254,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A0483161F65D57E005F4110 /* PBXTargetDependency */ = {
+		8A04831B1F65E159005F4110 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8A1297DE1F63130200BB1BEC /* KALoader */;
-			targetProxy = 8A0483151F65D57E005F4110 /* PBXContainerItemProxy */;
+			targetProxy = 8A04831A1F65E159005F4110 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

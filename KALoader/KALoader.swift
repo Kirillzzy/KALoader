@@ -15,7 +15,7 @@ internal class KALoaderView: UIView {
   private let backGrayColor = UIColor(red: 246.0 / 255, green: 246.0 / 255, blue: 246.0 / 255, alpha: 1.0)
   private let firstLoadColor = UIColor(red: 222.0 / 255, green: 222.0 / 255, blue: 222.0 / 255, alpha: 1.0)
   private let secondLoadColor = UIColor(red: 221.0 / 255, green: 221.0 / 255, blue: 221.0 / 255, alpha: 1.0)
-  private var fillMode: String = kCAFillModeForwards
+  private let fillMode: String = kCAFillModeForwards
   private var gradientAnimationDuration: TimeInterval = 0.7
 
   private var gradientLayer: CAGradientLayer!
@@ -44,10 +44,13 @@ internal class KALoaderView: UIView {
     gradientLayer.frame = frame
   }
 
-  func setCustom(gradientLayer: CAGradientLayer, fillMode: String,
-                 gradientAnimationDuration: TimeInterval) {
-    self.gradientLayer = gradientLayer
-    self.fillMode = fillMode
+  func setCustom(colors: [UIColor], gradientAnimationDuration: TimeInterval) {
+    if colors.count != 5 {
+      assertionFailure("You should send 5 colors in colors array")
+    }
+    var cgColors = [CGColor]()
+    colors.forEach({ cgColors.append($0.cgColor) })
+    self.gradientLayer.colors = cgColors
     self.gradientAnimationDuration = gradientAnimationDuration
   }
 
