@@ -23,15 +23,31 @@ internal extension UIView {
   }
 }
 
+// MARK: - Internal methods
+internal extension UIView {
+  func _showLoader() {
+    guard let viewKALoader = viewKALoader else { return }
+
+    insertSubview(viewKALoader, at: 0)
+    viewKALoader.startAnimateLayer()
+  }
+}
+
 // MARK: - Defaults methods
 public extension UIView {
   func showLoader() {
     if viewKALoader != nil { return }
     viewKALoader = KALoaderView(frame: self.bounds)
-    guard let viewKALoader = viewKALoader else { return }
+    _showLoader()
+  }
 
-    insertSubview(viewKALoader, at: 0)
-    viewKALoader.startAnimateLayer()
+  func showLoader(with customGradientLayer: CAGradientLayer, fillMode: String = kCAFillModeForwards,
+                  gradientAnimationDuration: TimeInterval = 0.7) {
+    if viewKALoader != nil { return }
+    viewKALoader = KALoaderView(frame: self.bounds)
+    viewKALoader?.setCustom(gradientLayer: customGradientLayer, fillMode: fillMode,
+                            gradientAnimationDuration: gradientAnimationDuration)
+    _showLoader()
   }
 
   func hideLoader() {

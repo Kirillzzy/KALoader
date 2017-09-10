@@ -12,10 +12,11 @@ internal class KALoaderView: UIView {
   /// Constants
   private let gradientWidth: CGFloat = 0.2
   private let gradientStop: CGFloat = 0.1
-  private let gradientAnimationDuration: TimeInterval = 0.7
-  private let backGrayColor = UIColor(red: 246.0 / 255, green: 247.0 / 255, blue: 248.0 / 255, alpha: 1.0)
+  private let backGrayColor = UIColor(red: 246.0 / 255, green: 246.0 / 255, blue: 246.0 / 255, alpha: 1.0)
   private let firstLoadColor = UIColor(red: 222.0 / 255, green: 222.0 / 255, blue: 222.0 / 255, alpha: 1.0)
   private let secondLoadColor = UIColor(red: 221.0 / 255, green: 221.0 / 255, blue: 221.0 / 255, alpha: 1.0)
+  private var fillMode: String = kCAFillModeForwards
+  private var gradientAnimationDuration: TimeInterval = 0.7
 
   private var gradientLayer: CAGradientLayer!
 
@@ -43,6 +44,13 @@ internal class KALoaderView: UIView {
     gradientLayer.frame = frame
   }
 
+  func setCustom(gradientLayer: CAGradientLayer, fillMode: String,
+                 gradientAnimationDuration: TimeInterval) {
+    self.gradientLayer = gradientLayer
+    self.fillMode = fillMode
+    self.gradientAnimationDuration = gradientAnimationDuration
+  }
+
   func startAnimateLayer() {
     let gradientAnimation = CABasicAnimation(keyPath: "locations")
     gradientAnimation.fromValue = gradientLayer.locations
@@ -50,7 +58,7 @@ internal class KALoaderView: UIView {
                                  NSNumber(value: Double(1 + (gradientWidth - gradientStop))),
                                  NSNumber(value: Double(1 + gradientWidth))]
     gradientAnimation.duration = gradientAnimationDuration
-    gradientAnimation.fillMode = kCAFillModeForwards
+    gradientAnimation.fillMode = fillMode
     gradientAnimation.repeatCount = .infinity
     gradientLayer.add(gradientAnimation, forKey: nil)
   }
