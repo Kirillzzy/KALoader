@@ -6,7 +6,7 @@
 //  Copyright © 2017 Kirill Averyanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import ObjectiveC
 
 private var associationKey = "view_kaloader_key"

@@ -2,9 +2,9 @@ Pod::Spec.new do |s|
 
   s.name         = "KALoader"
   s.version      = "0.1"
-  s.summary      = "Create beautiful animatable placeholders"
+  s.summary      = "Create beautiful animated placeholders"
   s.description  = <<-DESC
-  This framework will help you to create beautiful animatable placeholders
+  This framework will help you to create beautiful animated placeholders
                    DESC
 
   s.homepage     = "https://github.com/Kirillzzy/KALoader"
