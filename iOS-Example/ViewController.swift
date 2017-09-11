@@ -66,13 +66,13 @@ class ViewController: UIViewController {
         label.showLoader()
       }
 
-      testImageView2.showLoader(colors: colorsPurple, gradientAnimationDuration: 1.5)
+      testImageView2.showLoader(colors: colorsPurple, animationDuration: 1.5)
       for label in testLabelCollection2 {
-        label.showLoader(colors: colorsPurple, gradientAnimationDuration: 1.5)
+        label.showLoader(colors: colorsPurple, animationDuration: 1.5)
       }
 
-      testView.showLoader(colors: colorsRed, gradientAnimationDuration: 0.5)
-      testTextView.showLoader(colors: colorsGreen, gradientAnimationDuration: 2)
+      testView.showLoader(colors: colorsRed, animationDuration: 0.5)
+      testTextView.showLoader(colors: colorsGreen, animationDuration: 2)
     } else {
       testImageView.hideLoader()
       for label in testLabelCollection {

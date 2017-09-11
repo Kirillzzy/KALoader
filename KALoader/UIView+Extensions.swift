@@ -41,10 +41,10 @@ public extension UIView {
     _showLoader()
   }
 
-  func showLoader(colors: [UIColor], gradientAnimationDuration: TimeInterval = 0.7) {
+  func showLoader(colors: [UIColor], animationDuration: TimeInterval = 0.7) {
     if viewKALoader != nil { return }
     viewKALoader = KALoaderView(frame: self.bounds)
-    viewKALoader?.setCustom(colors: colors, gradientAnimationDuration: gradientAnimationDuration)
+    viewKALoader?.setCustom(colors: colors, gradientAnimationDuration: animationDuration)
     _showLoader()
   }
 
