@@ -1,5 +1,5 @@
 # KALoader
-[![CocoaPods](https://img.shields.io/badge/pod-v0.2-orange.svg)](https://img.shields.io/badge/pod-v0.2-orange.svg)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.3-orange.svg)](https://img.shields.io/badge/pod-v0.3-orange.svg)
 [![Twitter](https://img.shields.io/badge/twitter-%40kirillzzy-blue.svg?style=flat)](https://twitter.com/kirillzzy)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
