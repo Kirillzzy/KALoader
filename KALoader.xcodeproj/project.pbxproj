@@ -465,6 +465,7 @@
 				8A0483111F65D36C005F4110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A1297D91F63130200BB1BEC /* Build configuration list for PBXProject "KALoader" */ = {
 			isa = XCConfigurationList;
