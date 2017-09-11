@@ -1,5 +1,6 @@
 # KALoader
 [![CocoaPods](https://img.shields.io/badge/pod-v0.3-orange.svg)](https://img.shields.io/badge/pod-v0.3-orange.svg)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Twitter](https://img.shields.io/badge/twitter-%40kirillzzy-blue.svg?style=flat)](https://twitter.com/kirillzzy)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
@@ -46,6 +47,10 @@ To integrate in your project:
 - Add the following to your [`Podfile`](http://cocoapods.org/) and run `pod install`
 ```
 pod 'KALoader'
+```
+- Or add the following to your [`Cartfile`](https://github.com/Carthage/Carthage) and run `carthage update`
+```
+github "kirillzzy/KALoader"
 ```
 - Or clone as a git submodule
 
