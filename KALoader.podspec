@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KALoader"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "Create beautiful animated placeholders"
   s.description  = <<-DESC
   This framework will help you to create beautiful animated placeholders
