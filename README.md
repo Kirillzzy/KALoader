@@ -1,10 +1,10 @@
 # KALoader
-[![CocoaPods](https://img.shields.io/badge/pod-v0.3-orange.svg)](https://img.shields.io/badge/pod-v0.3-orange.svg)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.4-orange.svg)](https://img.shields.io/badge/pod-v0.4-orange.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Twitter](https://img.shields.io/badge/twitter-%40kirillzzy-blue.svg?style=flat)](https://twitter.com/kirillzzy)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
-Create breautiful animated placeholders for showing loading of data. You can change colors like you want.
+Create breautiful animated placeholders for showing loading of data. You can change colors like you want. Swift 4 compatible.
 
 ![alt tag](https://github.com/Kirillzzy/KALoader/blob/master/imgs/grayLoader.gif)
 ![alt tag](https://github.com/Kirillzzy/KALoader/blob/master/imgs/purpleLoader.gif)
