@@ -17,12 +17,10 @@ internal class KALoaderView: UIView {
   private let secondLoadColor = UIColor(red: 221.0 / 255, green: 221.0 / 255, blue: 221.0 / 255, alpha: 1.0)
   private let fillMode: String = kCAFillModeForwards
   private var gradientAnimationDuration: TimeInterval = 0.7
-
   private var gradientLayer: CAGradientLayer!
 
   override init(frame: CGRect) {
     super.init(frame: frame)
-
     gradientLayer = CAGradientLayer()
     gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
     gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
