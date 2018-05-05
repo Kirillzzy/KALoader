@@ -28,7 +28,7 @@ internal extension UIView {
   func _showLoader() {
     guard let viewKALoader = viewKALoader else { return }
 
-    insertSubview(viewKALoader, at: 0)
+    addSubview(viewKALoader)
     viewKALoader.startAnimateLayer()
   }
 }
